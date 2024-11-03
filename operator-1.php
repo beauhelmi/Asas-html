@@ -16,7 +16,7 @@
     $x = 15 ** 4; // kuasa, hasil 50,625
     echo "$x <br>";
 */
-
+/*
     $x = 15; // memberi nilai 15
     echo "$x <br>";
     
@@ -34,4 +34,38 @@
 
     $x %= 15; // operasi modulus
     echo "$x <br>";
-    ?>
+    */
+    /*
+    $x = 15;
+
+    echo $x++ . '<br>'; // memberi nilai, kemudian tambah nilai 
+    echo $x.' -- <br>'; // nilai sebenar
+    echo ++$x . '<br>'; // ditambah 1, kemudian pamerkan nilai
+    echo $x.' -- <br>'; // nilai sebenar
+    echo $x-- . '<br>'; // memberi nilai, kemudian tolak nilai
+    echo $x.' -- <br>'; // nilai sebenar
+    echo --$x . '<br>'; // ditolak 1, kemudian pamerkan nilai
+    echo $x.' -- <br>'; // nilai sebenar
+
+    */
+
+    $x = 10;
+    $y = 15;
+
+    if ($x === $y) {
+        echo "YES";
+    } else {
+        echo "NO";
+    }
+
+    /* 
+
+        if ($x === $y) {. . .} // sama dengan, very strict
+        if ($x != $y) {. . .} // tidak sama dengan, tak consider data type
+        if ($x !== $y){. . . } // tidak sama dengan, consider data type
+        if($x > $y){. . . } // lebih besar
+        if($x >= $y){. . . } // lebih besar atau sama dengan
+        if($x < $y){. . . } // lebih kecil
+        if($x <= $y){. . .} // lebih kecil atau sama dengan
+
+?>
