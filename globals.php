@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-      <?php print_r($_GET); ?>
+    $_POST
+        <?php print_r($_POST); ?>
 
-
+    $_GET
+        <?php print_r($_GET); ?>
 </body>
 </html>
