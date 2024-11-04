@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAMBDA HOMEWORK</title>
-</head>
-<body>
-    <?php 
+<?php 
         $books = [
             [
                 'name' => 'Do Android Dream of Electric Sheep',
@@ -32,16 +24,7 @@
         $filteredBooks = array_filter($books, function ($book){
             return $book['author'] === 'Andy Weir' && $book['releaseYear'] >= 1950 && $book['releaseYear'] <= 2020;
         });
+
+    require "lambdaHW.view.php";
     ?>
 
-    <ul>
-        <?php foreach ($filteredBooks as $book) : ?>
-            <li>
-                <a href="<?= $book['purchaseUrl'] ?>" >
-                    <?= $book['name']; ?> (<?= $book['releaseYear'] ?> - By <?= $book['author'] ?>
-            </a>
-                </li>
-        <?php endforeach; ?>
-    </ul>
-</body>
-</html>
