@@ -35,7 +35,7 @@
 
                 foreach ($books as $book){
                     if ($book['author'] === $author){
-                        $filteredBooks[] = $book;
+                        $filteredBooks[] = $book; // append this book as a new item on this array
                     }
                 }
 
@@ -44,7 +44,7 @@
         ?>
 
         <ul>
-            <?php foreach(filterByAuthor($books, 'Philip K. Dick') as $book) : ?>
+            <?php foreach(filterByAuthor($books, 'Andy Weir') as $book) : ?>
                 <li>
                     <a href="<?= $book['purchaseUrl'] ?>">
                         <?= $book['name']; ?>(<?= $book['releaseYear'] ?>) - By <?= $book['author'] ?>
